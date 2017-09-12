@@ -1,0 +1,15 @@
+//
+// Prefix header for all source files of the 'SVProgressHUD' target in the 'SVProgressHUD' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
+
+// From here to end of file added by Injection Plugin //
+
+#ifdef DEBUG
+#define INJECTION_ENABLED
+
+#import "/tmp/injectionforxcode/BundleInterface.h"
+#endif
