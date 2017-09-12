@@ -94,6 +94,7 @@
 		C12820081F67F2AE005F1DCD /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C12820071F67F2AE005F1DCD /* MineViewController.m */; };
 		C128200B1F67F374005F1DCD /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C128200A1F67F374005F1DCD /* LoginViewController.m */; };
 		C145F8831F6771F1003E999A /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C145F8821F6771F1003E999A /* MainTabBarViewController.m */; };
+		C1A001DE1F68418C006364E6 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A001DD1F68418C006364E6 /* RegisterViewController.m */; };
 		D3CD445FAC18D74DB0E1C08E /* libPods-BeesPlayUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C1A027F1D1CC9244A32443 /* libPods-BeesPlayUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -251,6 +252,8 @@
 		C145F8811F6771F1003E999A /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
 		C145F8821F6771F1003E999A /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
 		C145F8841F677723003E999A /* BeesPlay-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeesPlay-PrefixHeader.pch"; sourceTree = "<group>"; };
+		C1A001DC1F68418C006364E6 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		C1A001DD1F68418C006364E6 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		F4F23AD6A0CF5F0141DC353C /* Pods-BeesPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeesPlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeesPlay/Pods-BeesPlay.debug.xcconfig"; sourceTree = "<group>"; };
 		FD2B4A0A781F50CCC41A8D58 /* Pods-BeesPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeesPlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeesPlay/Pods-BeesPlay.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -331,6 +334,8 @@
 			children = (
 				C12820091F67F374005F1DCD /* LoginViewController.h */,
 				C128200A1F67F374005F1DCD /* LoginViewController.m */,
+				C1A001DC1F68418C006364E6 /* RegisterViewController.h */,
+				C1A001DD1F68418C006364E6 /* RegisterViewController.m */,
 			);
 			path = Entry;
 			sourceTree = "<group>";
@@ -1061,6 +1066,7 @@
 				C1281FFF1F67F254005F1DCD /* AlbumViewController.m in Sources */,
 				C12119891F66D6FB00FD05D7 /* SVIndefiniteAnimatedView.m in Sources */,
 				C121197E1F66D6FB00FD05D7 /* AppUtils.m in Sources */,
+				C1A001DE1F68418C006364E6 /* RegisterViewController.m in Sources */,
 				C11A03871F6694080022C428 /* AppDelegate.m in Sources */,
 				C12119851F66D6FB00FD05D7 /* Singleton.m in Sources */,
 				C121198D1F66D6FB00FD05D7 /* Toast+UIView.m in Sources */,
