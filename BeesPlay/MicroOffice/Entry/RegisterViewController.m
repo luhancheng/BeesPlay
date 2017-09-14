@@ -49,16 +49,21 @@
 }
 
 - (void)initSubViews {
-    self.account = [[UITextField alloc] initWithFrame:CGRectMake(WIDTH(20), WIDTH(150), WIDTH(280), WIDTH(45)) text:nil placeholder:@"邮箱:" delegate:self];
+    UILabel *emaiL = [[UILabel alloc] initWithFrame:CGRectMake(WIDTH(20), WIDTH(150), WIDTH(45), WIDTH(45)) text:@"邮箱:" textColor:[UIColor lightGrayColor] font:[UIFont systemFontOfSize:16]];
+    [self.view addSubview:emaiL];
+    self.account = [[UITextField alloc] initWithFrame:CGRectMake(emaiL.right, emaiL.top, kScreenWidth-emaiL.right-emaiL.left, emaiL.height) text:nil placeholder:nil delegate:self];
     self.account.borderStyle = UITextBorderStyleNone;
     [self.view addSubview:self.account];
-    self.password = [[UITextField alloc] initWithFrame:CGRectMake(self.account.left, self.account.bottom+WIDTH(10), WIDTH(186), self.account.height) text:nil placeholder:@"请输入密码:" delegate:self];
+    UILabel *passwordL = [[UILabel alloc] initWithFrame:CGRectMake(emaiL.x, emaiL.bottom+WIDTH(10), WIDTH(93), WIDTH(45)) text:@"请输入密码:" textColor:[UIColor lightGrayColor] font:[UIFont systemFontOfSize:16]];
+    [self.view addSubview:passwordL];
+    self.password = [[UITextField alloc] initWithFrame:CGRectMake(passwordL.right, passwordL.top, kScreenWidth - passwordL.right-passwordL.left, passwordL.height) text:nil placeholder:nil delegate:self];
     self.password.borderStyle = UITextBorderStyleNone;
     self.password.secureTextEntry = YES;
     [self.view addSubview:self.password];
     
-  
-    self.determine = [[UITextField alloc] initWithFrame:CGRectMake(self.password.left, self.password.bottom+WIDTH(10), self.account.width, self.password.height) text:nil placeholder:@"请再次输入密码:" delegate:self];
+    UILabel *determinL = [[UILabel alloc] initWithFrame:CGRectMake(passwordL.x, passwordL.bottom+WIDTH(10), WIDTH(135), WIDTH(45)) text:@"请再次输入密码:" textColor:[UIColor lightGrayColor] font:[UIFont systemFontOfSize:16]];
+    [self.view addSubview:determinL];
+    self.determine = [[UITextField alloc] initWithFrame:CGRectMake(determinL.right, determinL.top, kScreenWidth - determinL.right-determinL.left, determinL.height) text:nil placeholder:nil delegate:self];
     self.determine.borderStyle = UITextBorderStyleNone;
     self.determine.secureTextEntry = YES;
     [self.view addSubview:self.determine];
@@ -66,18 +71,18 @@
 
     [self.view addSubview:self.codeBtn];
 
-    self.registerBtn = [[UIButton alloc] initWithFrame:CGRectMake(self.determine.left, self.determine.bottom+WIDTH(10), self.determine.width, self.determine.height) title:@"注册" textColor:[UIColor whiteColor] font:[UIFont systemFontOfSize:17] backgroundImageNames:nil target:self action:@selector(registerClick:)];
+    self.registerBtn = [[UIButton alloc] initWithFrame:CGRectMake(determinL.left, determinL.bottom+WIDTH(25), self.determine.right - determinL.left, self.determine.height) title:@"注册" textColor:[UIColor whiteColor] font:[UIFont systemFontOfSize:17] backgroundImageNames:nil target:self action:@selector(registerClick:)];
     self.registerBtn.backgroundColor = rgb(251, 163, 26);
     self.registerBtn.layer.cornerRadius = self.registerBtn.height/2;
     [self.view addSubview:self.registerBtn];
     
-    UILabel *line1 = [[UILabel alloc] initWithFrame:CGRectMake(self.account.left, self.account.bottom+1, self.account.width, 1)];
+    UILabel *line1 = [[UILabel alloc] initWithFrame:CGRectMake(emaiL.left, emaiL.bottom+1, self.account.right - emaiL.left, 1)];
     line1.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:line1];
-    UILabel *line2 = [[UILabel alloc] initWithFrame:CGRectMake(self.password.left, self.password.bottom+1, self.password.width, 1)];
+    UILabel *line2 = [[UILabel alloc] initWithFrame:CGRectMake(passwordL.left, passwordL.bottom+1, self.password.right - passwordL.left, 1)];
     line2.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:line2];
-    UILabel *line3 = [[UILabel alloc] initWithFrame:CGRectMake(self.determine.left, self.determine.bottom+1, self.determine.width, 1)];
+    UILabel *line3 = [[UILabel alloc] initWithFrame:CGRectMake(determinL.left, determinL.bottom+1, self.determine.right - determinL.left, 1)];
     line3.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:line3];
 }
@@ -86,7 +91,10 @@
  * 点击注册按钮
  */
 - (void)registerClick:(UIButton *)registen {
-    //邮箱格式判断待写
+    //邮箱格式判断
+    if ([self isValidateEmail:self.account.text] ==NO) {
+        [UIAlertController alertControllerWithTitle:@"邮箱格式错误" message:nil preferredStyle:UIAlertControllerStyleAlert];
+    }
     if ([self isBlankString:self.account.text] == YES || [self isBlankString:self.password.text] == YES || [self isBlankString:self.determine.text] == YES) {
         [self showAlertViewWithMessage:@"内容不能为空呦"];
         return ;
@@ -141,6 +149,21 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+//手机号码的正则表达式
+- (BOOL)isValidateMobile:(NSString *)mobile{
+    //手机号以13、15、18开头，八个\d数字字符
+    NSString *phoneRegex = @"^((13[0-9])|(15[^4,\\D])|(18[0,0-9]))\\d{8}$";
+    NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phoneRegex];
+    return [phoneTest evaluateWithObject:mobile];
+}
+
+//邮箱地址的正则表达式
+- (BOOL)isValidateEmail:(NSString *)email{
+    NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+    return [emailTest evaluateWithObject:email];
 }
 
 
