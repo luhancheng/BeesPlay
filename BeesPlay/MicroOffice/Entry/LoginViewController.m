@@ -47,21 +47,32 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self initTitleWith:@"登录"];
-    self.titleBackgroudView.backgroundColor = rgb(248, 14, 60);
+    //[self initTitleWith:@"登录"];
+    //self.titleBackgroudView.backgroundColor = rgb(248, 14, 60);
     
-    [self addBackButtonWithTitle:@"返回"];
+    //[self addBackButtonWithTitle:@"返回"];
+    self.view.backgroundColor = [UIColor whiteColor];
     [self initSubView];
 }
 
 - (void)initSubView {
-    nameTextField = [[UITextField alloc] initWithFrame:CGRectMake(WIDTH(20), WIDTH(150), WIDTH(280), WIDTH(45)) text:nil placeholder:@"手机号" delegate:self];
+    nameTextField = [[UITextField alloc] initWithFrame:CGRectMake(WIDTH(20), WIDTH(150), WIDTH(280), WIDTH(45)) text:nil placeholder:@"请输入账号" delegate:self];
     nameTextField.keyboardType = UIKeyboardTypeNumberPad;
+    nameTextField.borderStyle = UITextBorderStyleNone;
     [self.view addSubview:nameTextField];
     
-    codeTextField = [[UITextField alloc] initWithFrame:CGRectMake(nameTextField.left, nameTextField.bottom+WIDTH(15), nameTextField.width, nameTextField.height) text:nil placeholder:@"密码" delegate:self];
+    codeTextField = [[UITextField alloc] initWithFrame:CGRectMake(nameTextField.left, nameTextField.bottom+WIDTH(15), nameTextField.width, nameTextField.height) text:nil placeholder:@"请输入密码" delegate:self];
     codeTextField.secureTextEntry = YES;
+    codeTextField.borderStyle = UITextBorderStyleNone;
     [self.view addSubview:codeTextField];
+    
+    UILabel *lineL = [[UILabel alloc] initWithFrame:CGRectMake(nameTextField.left, nameTextField.bottom+1, nameTextField.width, 1)];
+    lineL.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:lineL];
+    
+    UILabel *lineL2 = [[UILabel alloc] initWithFrame:CGRectMake(codeTextField.left, codeTextField.bottom+1, codeTextField.width, 1)];
+    lineL2.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:lineL2];
     
     if ([self hasLogin]) {
         
@@ -70,22 +81,24 @@
     }
     
     loginBtn = [[UIButton alloc] initWithFrame:CGRectMake(codeTextField.left, codeTextField.bottom+WIDTH(40), codeTextField.width, codeTextField.height) title:@"登录" textColor:[UIColor whiteColor] font:[UIFont systemFontOfSize:20] backgroundImageNames:nil target:self action:@selector(loginPush:)];
-    loginBtn.backgroundColor = rgb(248, 14, 60);
+    loginBtn.backgroundColor = rgb(251, 163, 26);
+    loginBtn.layer.cornerRadius = codeTextField.height/2;
     [self.view addSubview:loginBtn];
     
-    changePas = [[UIButton alloc] initWithFrame:CGRectMake(loginBtn.left, loginBtn.bottom+WIDTH(10), WIDTH(100), WIDTH(20)) title:@"修改密码" textColor:[UIColor lightGrayColor] target:self action:@selector(changePush:)];
-    changePas.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+    changePas = [[UIButton alloc] initWithFrame:CGRectMake(loginBtn.right-WIDTH(100), loginBtn.bottom+WIDTH(10), WIDTH(100), WIDTH(20)) title:@"忘记密码" textColor:[UIColor lightGrayColor] target:self action:@selector(changePush:)];
+    changePas.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
     [self.view addSubview:changePas];
-    
-    registerAccount = [[UIButton alloc] initWithFrame:CGRectMake(loginBtn.right-WIDTH(100), loginBtn.bottom+WIDTH(10), WIDTH(100), WIDTH(20)) title:@"注册账号" textColor:[UIColor lightGrayColor] target:self action:@selector(registerPush:)];
-    registerAccount.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
+    //
+    registerAccount = [[UIButton alloc] initWithFrame:CGRectMake(loginBtn.left, loginBtn.bottom+WIDTH(10), WIDTH(100), WIDTH(20)) title:@"注册" textColor:[UIColor orangeColor] target:self action:@selector(registerPush:)];
+    registerAccount.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
     [self.view addSubview:registerAccount];
     
+    /*
     UIButton *RegisterBtn = [[UIButton alloc] initWithFrame:CGRectMake(kScreenWidth-43, TOP_BLANNER_HEIGHT-40, 40, 30) title:@"注册" textColor:[UIColor lightGrayColor] target:self action:@selector(clickRigster:)];
     RegisterBtn.titleLabel.font = [UIFont systemFontOfSize:17];
     [self.titleBackgroudView addSubview:RegisterBtn]; // 筛选按钮
-    
-    thirdParty = [[UILabel alloc] initWithFrame:CGRectMake(0, (kScreenHeight + RegisterBtn.centerY)/2+WIDTH(150), kScreenWidth, 25) text:@"第三方登陆" textColor:[UIColor lightGrayColor] font:[UIFont systemFontOfSize:20]];
+    */
+    thirdParty = [[UILabel alloc] initWithFrame:CGRectMake(0, (kScreenHeight + self.titleBackgroudView.center.y)/2+WIDTH(150), kScreenWidth, 25) text:@"其他登录方式" textColor:[UIColor lightGrayColor] font:[UIFont systemFontOfSize:20]];
     thirdParty.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:thirdParty];
     
@@ -144,7 +157,6 @@
  */
 - (void)changePush:(UIButton *)change {
     RegisterViewController *registerVC = [RegisterViewController new];
-    registerVC.maskType = 5;
     [self goToController:registerVC withAnimation:YES];
     
 }
@@ -154,19 +166,20 @@
 - (void)registerPush:(UIButton *)regisn {
     
     RegisterViewController *registerVC = [RegisterViewController new];
-    [self goToController:registerVC withAnimation:YES];
+    //[self goToController:registerVC withAnimation:YES];
+    [self presentViewController:registerVC animated:NO completion:nil];
 }
 
 /*
  *导航条注册账号响应事件
  */
-
+/*
 - (void)clickRigster:(UIButton *)click {
     
     RegisterViewController *registerVC = [RegisterViewController new];
     [self.navigationController pushViewController:registerVC animated:YES];
 }
-
+*/
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

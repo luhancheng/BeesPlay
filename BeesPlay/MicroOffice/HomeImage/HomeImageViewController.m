@@ -7,12 +7,25 @@
 //
 
 #import "HomeImageViewController.h"
-
+#import "LoginViewController.h"
 @interface HomeImageViewController ()
 
 @end
 
 @implementation HomeImageViewController
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    if (![Singleton shareSingleton].isLogin) {
+        
+        LoginViewController *loginVC = [[LoginViewController alloc] init];
+        [self.navigationController presentViewController:loginVC animated:NO completion:nil];
+        
+       
+    }
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

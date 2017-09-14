@@ -9,5 +9,5 @@
 #import "BaseViewController.h"
 
 @interface RegisterViewController : BaseViewController
-@property (nonatomic, assign) NSInteger maskType;
+
 @end

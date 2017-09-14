@@ -104,7 +104,8 @@
     
     _titleLabel.center = CGPointMake(self.titleBackgroudView.center.x, TOP_BLANNER_HEIGHT-25);
     _titleLabel.textAlignment = NSTextAlignmentCenter;
-    _titleLabel.textColor = kHexColor(@"ffffff");
+    //_titleLabel.textColor = kHexColor(@"ffffff");
+    _titleLabel.textColor = kHexColor(@"000000");
     [self.titleBackgroudView addSubview:_titleLabel];
 }
 
