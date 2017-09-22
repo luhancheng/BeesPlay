@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import "RegisterViewController.h"
 #import <TencentOpenAPI/TencentOAuth.h>
+#import "PasswordRetrievalViewController.h"
 
 /*  授权登录 */
 #import "WXApi.h"
@@ -24,11 +25,14 @@
     UIButton *registerAccount;//注册账号
     UIButton *weixinBtn;//微信登陆
     UIButton *TencentBtn;//QQ登陆
+    UIButton *weiboBtn;//微博登录
     UILabel *thirdParty;//第三方登陆Label
+    
     
 }
 // QQ 授权实例变量
 @property (nonatomic, strong) TencentOAuth *tencentOAuth ;
+@property (nonatomic, strong) UIImageView *iconImage;
 @end
 
 @implementation LoginViewController
@@ -49,13 +53,16 @@
     // Do any additional setup after loading the view.
     //[self initTitleWith:@"登录"];
     //self.titleBackgroudView.backgroundColor = rgb(248, 14, 60);
-    
     //[self addBackButtonWithTitle:@"返回"];
+    self.line.backgroundColor = [UIColor whiteColor];
     self.view.backgroundColor = [UIColor whiteColor];
     [self initSubView];
 }
 
 - (void)initSubView {
+    _iconImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo"]];
+    _iconImage.frame = CGRectMake((kScreenWidth - WIDTH(65))/2, self.titleBackgroudView.bottom + WIDTH(5), WIDTH(65), WIDTH(65));
+    [self.view addSubview: _iconImage];
     nameTextField = [[UITextField alloc] initWithFrame:CGRectMake(WIDTH(20), WIDTH(150), WIDTH(280), WIDTH(45)) text:nil placeholder:@"请输入账号" delegate:self];
     nameTextField.keyboardType = UIKeyboardTypeNumberPad;
     nameTextField.borderStyle = UITextBorderStyleNone;
@@ -82,10 +89,9 @@
     
     loginBtn = [[UIButton alloc] initWithFrame:CGRectMake(codeTextField.left, codeTextField.bottom+WIDTH(40), codeTextField.width, codeTextField.height) title:@"登录" textColor:[UIColor whiteColor] font:[UIFont systemFontOfSize:20] backgroundImageNames:nil target:self action:@selector(loginPush:)];
     loginBtn.backgroundColor = rgb(251, 163, 26);
-    loginBtn.layer.cornerRadius = codeTextField.height/2;
     [self.view addSubview:loginBtn];
     
-    changePas = [[UIButton alloc] initWithFrame:CGRectMake(loginBtn.right-WIDTH(100), loginBtn.bottom+WIDTH(10), WIDTH(100), WIDTH(20)) title:@"忘记密码" textColor:[UIColor lightGrayColor] target:self action:@selector(changePush:)];
+    changePas = [[UIButton alloc] initWithFrame:CGRectMake(loginBtn.right-WIDTH(100), loginBtn.bottom+WIDTH(10), WIDTH(100), WIDTH(20)) title:@"忘记密码?" textColor:[UIColor lightGrayColor] target:self action:@selector(changePush:)];
     changePas.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
     [self.view addSubview:changePas];
     //
@@ -98,20 +104,40 @@
     RegisterBtn.titleLabel.font = [UIFont systemFontOfSize:17];
     [self.titleBackgroudView addSubview:RegisterBtn]; // 筛选按钮
     */
-    thirdParty = [[UILabel alloc] initWithFrame:CGRectMake(0, (kScreenHeight + self.titleBackgroudView.center.y)/2+WIDTH(150), kScreenWidth, 25) text:@"其他登录方式" textColor:[UIColor lightGrayColor] font:[UIFont systemFontOfSize:20]];
+ 
+    thirdParty = [[UILabel alloc] initWithFrame:CGRectMake((kScreenWidth-130)/2, (kScreenHeight + self.titleBackgroudView.center.y)/2+WIDTH(150), 130, 25) text:@"其他登录方式" textColor:[UIColor lightGrayColor] font:[UIFont systemFontOfSize:20]];
     thirdParty.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:thirdParty];
+    UILabel *dottedLine = [[UILabel alloc] initWithFrame:CGRectMake(loginBtn.left, (kScreenHeight + self.titleBackgroudView.center.y)/2+WIDTH(150)+12.5, thirdParty.left-loginBtn.left, 1)];
+    dottedLine.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:dottedLine];
+    UILabel *dottedLineTwo = [[UILabel alloc] initWithFrame:CGRectMake(thirdParty.right, dottedLine.top, dottedLine.width, 1)];
+    dottedLineTwo.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:dottedLineTwo];
     
-    weixinBtn = [[UIButton alloc] initWithFrame:CGRectMake((kScreenWidth/2) - 100, thirdParty.bottom+WIDTH(20), WIDTH(45), WIDTH(45)) imageNames:@[@"微信@2x",@"微信@2x"] target:self action:@selector(clickWeixin:)];
+    weixinBtn = [[UIButton alloc] initWithFrame:CGRectMake(WIDTH(45), thirdParty.bottom+WIDTH(20), WIDTH(45), WIDTH(45)) imageNames:@[@"微信图片",@"微信图片"] target:self action:@selector(clickWeixin:)];
     [self.view addSubview:weixinBtn];
     
-    TencentBtn = [[UIButton alloc] initWithFrame:CGRectMake((kScreenWidth/2) + 50, weixinBtn.top, weixinBtn.width, weixinBtn.height) imageNames:@[@"QQ@2x",@"QQ@2x"] target:self action:@selector(clickTencent:)];
+    TencentBtn = [[UIButton alloc] initWithFrame:CGRectMake(kScreenWidth-WIDTH(90), weixinBtn.top, weixinBtn.width, weixinBtn.height) imageNames:@[@"QQ图片",@"QQ图片"] target:self action:@selector(clickTencent:)];
     [self.view addSubview:TencentBtn];
+    
+    weiboBtn = [[UIButton alloc] initWithFrame:CGRectMake((kScreenWidth-WIDTH(45))/2, weixinBtn.top, weixinBtn.width, weixinBtn.height) imageNames:@[@"微博图片",@"微博图片"] target:self action:@selector(clickWeibo:)];
+    [self.view addSubview:weiboBtn];
+    
 }
 /*
  *登录按钮响应事件
  */
 - (void)loginPush:(UIButton *)login {
+    [self doBack];
+    //[self.navigationController popToRootViewControllerAnimated:YES];
+    [Singleton shareSingleton].isLogin = YES;
+    
+    
+    
+    
+    
+    
     if ([self isBlankString:nameTextField.text] == YES || [self isBlankString:codeTextField.text] == YES) {
         [self showAlertViewWithMessage:@"用户名和密码不能为空哟"];
         //         [self showFailedView:@"用户名和密码不能为空哟"];
@@ -156,8 +182,8 @@
  *修改密码响应事件
  */
 - (void)changePush:(UIButton *)change {
-    RegisterViewController *registerVC = [RegisterViewController new];
-    [self goToController:registerVC withAnimation:YES];
+    PasswordRetrievalViewController *retrieval = [PasswordRetrievalViewController new];
+    [self goToController:retrieval withAnimation:YES];
     
 }
 /*
@@ -166,8 +192,8 @@
 - (void)registerPush:(UIButton *)regisn {
     
     RegisterViewController *registerVC = [RegisterViewController new];
-    //[self goToController:registerVC withAnimation:YES];
-    [self presentViewController:registerVC animated:NO completion:nil];
+    [self goToController:registerVC withAnimation:YES];
+    //[self presentViewController:registerVC animated:NO completion:nil];
 }
 
 /*
@@ -378,5 +404,10 @@
         [self showAlertViewWithMessage:@"登录失败，请检查你的网络"];
     }];
     
+}
+
+//微博登陆
+- (void)clickWeibo:(UIButton *)weibo {
+
 }
 @end

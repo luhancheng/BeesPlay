@@ -58,9 +58,9 @@
         [_titleBackgroudView addSubview:bgPic];
         bgPic.alpha = 0.8;
         
-//        UIView *line = [[UIView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_titleBackgroudView.frame)-1, kScreenWidth, 1)];
-//        line.backgroundColor = kColor(230, 230, 230);
-//        [_titleBackgroudView addSubview:line];
+        _line = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_titleBackgroudView.frame)-1, kScreenWidth, 1)];
+        _line.backgroundColor = kColor(230, 230, 230);
+        [_titleBackgroudView addSubview:_line];
     }
     return _titleBackgroudView;
 }
@@ -75,7 +75,7 @@
         _backButton.tag = 1;
         
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 4, 30, 30)];
-        imageView.image = [UIImage imageNamed:@"back@2x"];
+        imageView.image = [UIImage imageNamed:@"返回按钮-2"];
         imageView.contentMode = UIViewContentModeScaleAspectFill;
         imageView.clipsToBounds = YES;
         [_backButton addSubview:imageView];

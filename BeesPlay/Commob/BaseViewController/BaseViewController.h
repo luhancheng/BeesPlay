@@ -34,6 +34,7 @@
 
 @property (nonatomic, strong) BXKJUserInfo *userInfo;
 
+@property (nonatomic, strong) UILabel *line;
 
 
 /**

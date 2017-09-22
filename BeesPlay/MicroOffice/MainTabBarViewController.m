@@ -12,7 +12,7 @@
 #import "NewsViewController.h"
 #import "AlbumViewController.h"
 #import "MineViewController.h"
-
+#import "BroadcastViewController.h"
 @interface MainTabBarViewController ()
 
 @end
@@ -23,10 +23,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     // 添加子控制器
-    [self addChildVc:[[HomeImageViewController alloc] init] title:@"首页" image:@"tabbar_icon_caifu_normal" selectedImage:@"tabbar_icon_caifu_highlight"];
-    [self addChildVc:[[NewsViewController alloc] init] title:@"新闻" image:@"tabbar_icon_jubao_normal"selectedImage:@"tabbar_icon_jubao_highlight"];
-    [self addChildVc:[[AlbumViewController alloc] init] title:@"专辑" image:@"tabbar_icon_me_normal" selectedImage:@"tabbar_icon_me_highlight"];
-    [self addChildVc:[[MineViewController alloc] init] title:@"我的" image:@"tabbar_icon_me_normal" selectedImage:@"tabbar_icon_me_highlight"];
+    [self addChildVc:[[HomeImageViewController alloc] init] title:@"首页" image:@"tabbar_icon_home_normal" selectedImage:@"tabbar_icon_home_highlight"];
+    [self addChildVc:[[NewsViewController alloc] init] title:@"新闻" image:@"tabbar_icon_news_normal"selectedImage:@"tabbar_icon_news_highlight"];
+    [self addChildVc:[[AlbumViewController alloc] init] title:@"专辑" image:@"tabbar_icon_album_normal" selectedImage:@"tabbar_icon_album_highlight"];
+    [self addChildVc:[[BroadcastViewController alloc] init] title:@"直播" image:@"tabbar_icon_zhibo_normal" selectedImage:@"tabbar_icon_zhibo_highlight"];
+    [self addChildVc:[[MineViewController alloc] init] title:@"我的" image:@"tabbar_icon_mine_normal" selectedImage:@"tabbar_icon_mine_highlight"];
 }
 
 - (void)didReceiveMemoryWarning {

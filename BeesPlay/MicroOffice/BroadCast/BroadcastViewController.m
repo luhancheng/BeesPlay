@@ -1,31 +1,18 @@
 //
-//  HomeImageViewController.m
+//  BroadcastViewController.m
 //  BeesPlay
 //
-//  Created by 路与心 on 2017/9/12.
+//  Created by 路与心 on 2017/9/21.
 //  Copyright © 2017年 路与心. All rights reserved.
 //
 
-#import "HomeImageViewController.h"
-#import "LoginViewController.h"
-@interface HomeImageViewController ()
+#import "BroadcastViewController.h"
+
+@interface BroadcastViewController ()
 
 @end
 
-@implementation HomeImageViewController
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    
-    if (![Singleton shareSingleton].isLogin) {
-        
-        LoginViewController *loginVC = [[LoginViewController alloc] init];
-        //[self.navigationController presentViewController:loginVC animated:NO completion:nil];
-        [self goToController:loginVC withAnimation:NO];
-       
-    }
-    
-}
+@implementation BroadcastViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

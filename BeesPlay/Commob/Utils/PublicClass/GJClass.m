@@ -113,7 +113,7 @@
 - (id)initWithFrame:(CGRect)frame title:(NSString *)title  textColor:(UIColor*)color font:(UIFont*)font backgroundImageNames:(NSArray*)names target:(id)target action:(SEL)action{
     UIButton *button = [self initWithFrame:frame];
     button.titleLabel.font = font;
-    button.layer.cornerRadius = 4;
+    button.layer.cornerRadius = button.height/2;
     [button setTitle:title forState:UIControlStateNormal];
     [button setTitleColor:color forState:UIControlStateNormal];
     [button setBackgroundImage:[[UIImage imageNamed:[names objectAtIndex:0]]stretchableImageWithLeftCapWidth:10 topCapHeight:10] forState:UIControlStateNormal];
@@ -138,7 +138,7 @@
     [button setTitle:title forState:UIControlStateNormal];
     [button setTitleColor:color forState:UIControlStateNormal];
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
-    
+    button.layer.cornerRadius = button.height/2;
     return button;
     
 }

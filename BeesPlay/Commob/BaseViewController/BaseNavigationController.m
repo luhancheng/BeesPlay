@@ -57,7 +57,7 @@
     if (self.viewControllers.count > 0) { // 此时push进来的viewController是第二个子控制器
         // 进入子视图会自动隐藏tabBar
         viewController.hidesBottomBarWhenPushed = YES;
-        
+        //self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
         //        // 定义leftBarButtonItem
         //        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTargat:self action:@selector(back) image:@"navigationbar_back" highImage:@"navigationbar_back_highlighted"];
         //

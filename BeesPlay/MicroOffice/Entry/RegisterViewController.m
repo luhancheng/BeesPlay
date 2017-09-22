@@ -7,7 +7,7 @@
 //
 
 #import "RegisterViewController.h"
-
+#import "RegisterSuccessViewController.h"
 @interface RegisterViewController ()<UITextFieldDelegate>
 @property (nonatomic, strong) UITextField *account;
 @property (nonatomic, strong) UITextField *password;
@@ -38,12 +38,10 @@
     // Do any additional setup after loading the view.
  
    [self initTitleWith:@"注册账号"];
-
-    //self.titleLabel.text = @"注册账号";//self.title = @""
-    //self.titleLabel.textColor = [UIColor blueColor];
     self.titleBackgroudView.backgroundColor = rgb(255, 255, 255);
     self.view.backgroundColor = [UIColor whiteColor];
     [self addBackButtonWithTitle:@"返回"];
+    
     [self initSubViews];
     
 }
@@ -73,7 +71,7 @@
 
     self.registerBtn = [[UIButton alloc] initWithFrame:CGRectMake(determinL.left, determinL.bottom+WIDTH(25), self.determine.right - determinL.left, self.determine.height) title:@"注册" textColor:[UIColor whiteColor] font:[UIFont systemFontOfSize:17] backgroundImageNames:nil target:self action:@selector(registerClick:)];
     self.registerBtn.backgroundColor = rgb(251, 163, 26);
-    self.registerBtn.layer.cornerRadius = self.registerBtn.height/2;
+
     [self.view addSubview:self.registerBtn];
     
     UILabel *line1 = [[UILabel alloc] initWithFrame:CGRectMake(emaiL.left, emaiL.bottom+1, self.account.right - emaiL.left, 1)];
@@ -91,6 +89,8 @@
  * 点击注册按钮
  */
 - (void)registerClick:(UIButton *)registen {
+    RegisterSuccessViewController *registerSuc = [RegisterSuccessViewController new];
+    [self goToController:registerSuc withAnimation:YES];
     //邮箱格式判断
     if ([self isValidateEmail:self.account.text] ==NO) {
         [UIAlertController alertControllerWithTitle:@"邮箱格式错误" message:nil preferredStyle:UIAlertControllerStyleAlert];
