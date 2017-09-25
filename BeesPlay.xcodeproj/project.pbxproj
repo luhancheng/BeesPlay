@@ -34,6 +34,15 @@
 		C11A03921F6694080022C428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C11A03901F6694080022C428 /* LaunchScreen.storyboard */; };
 		C11A039D1F6694080022C428 /* BeesPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C11A039C1F6694080022C428 /* BeesPlayTests.m */; };
 		C11A03A81F6694080022C428 /* BeesPlayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C11A03A71F6694080022C428 /* BeesPlayUITests.m */; };
+		C12068201F793A3100454C8C /* TaskSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = C120681F1F793A3100454C8C /* TaskSearchController.m */; };
+		C12068231F793A6000454C8C /* TaskModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C12068221F793A6000454C8C /* TaskModel.m */; };
+		C12068261F793C7000454C8C /* ClassificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C12068251F793C7000454C8C /* ClassificationController.m */; };
+		C12068291F793F2500454C8C /* PersonMessageEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = C12068281F793F2500454C8C /* PersonMessageEditController.m */; };
+		C120682C1F795D8B00454C8C /* 选中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C120682A1F795D8B00454C8C /* 选中@2x.png */; };
+		C120682D1F795D8B00454C8C /* 选中@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C120682B1F795D8B00454C8C /* 选中@3x.png */; };
+		C120682F1F795D9200454C8C /* 未选中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C120682E1F795D9200454C8C /* 未选中@2x.png */; };
+		C12068311F795D9900454C8C /* 未选中@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C12068301F795D9900454C8C /* 未选中@3x.png */; };
+		C12068331F79643800454C8C /* 相机.png in Resources */ = {isa = PBXBuildFile; fileRef = C12068321F79643800454C8C /* 相机.png */; };
 		C12119541F66D6FB00FD05D7 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C12118E51F66D6FB00FD05D7 /* BaseNavigationController.m */; };
 		C12119551F66D6FB00FD05D7 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C12118E71F66D6FB00FD05D7 /* BaseViewController.m */; };
 		C12119561F66D6FB00FD05D7 /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C12118EA1F66D6FB00FD05D7 /* HttpManager.m */; };
@@ -170,6 +179,19 @@
 		C11A03A31F6694080022C428 /* BeesPlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeesPlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C11A03A71F6694080022C428 /* BeesPlayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeesPlayUITests.m; sourceTree = "<group>"; };
 		C11A03A91F6694080022C428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C120681E1F793A3100454C8C /* TaskSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskSearchController.h; sourceTree = "<group>"; };
+		C120681F1F793A3100454C8C /* TaskSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskSearchController.m; sourceTree = "<group>"; };
+		C12068211F793A6000454C8C /* TaskModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskModel.h; sourceTree = "<group>"; };
+		C12068221F793A6000454C8C /* TaskModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskModel.m; sourceTree = "<group>"; };
+		C12068241F793C7000454C8C /* ClassificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassificationController.h; sourceTree = "<group>"; };
+		C12068251F793C7000454C8C /* ClassificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassificationController.m; sourceTree = "<group>"; };
+		C12068271F793F2500454C8C /* PersonMessageEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonMessageEditController.h; sourceTree = "<group>"; };
+		C12068281F793F2500454C8C /* PersonMessageEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonMessageEditController.m; sourceTree = "<group>"; };
+		C120682A1F795D8B00454C8C /* 选中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "选中@2x.png"; sourceTree = "<group>"; };
+		C120682B1F795D8B00454C8C /* 选中@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "选中@3x.png"; sourceTree = "<group>"; };
+		C120682E1F795D9200454C8C /* 未选中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "未选中@2x.png"; sourceTree = "<group>"; };
+		C12068301F795D9900454C8C /* 未选中@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "未选中@3x.png"; sourceTree = "<group>"; };
+		C12068321F79643800454C8C /* 相机.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "相机.png"; sourceTree = "<group>"; };
 		C12118E41F66D6FB00FD05D7 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		C12118E51F66D6FB00FD05D7 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		C12118E61F66D6FB00FD05D7 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -343,6 +365,8 @@
 			children = (
 				C12820001F67F289005F1DCD /* HomeImageViewController.h */,
 				C12820011F67F289005F1DCD /* HomeImageViewController.m */,
+				C120681C1F79342C00454C8C /* Classification */,
+				C120681D1F79342C00454C8C /* Search */,
 			);
 			path = HomeImage;
 			sourceTree = "<group>";
@@ -376,6 +400,8 @@
 			children = (
 				C12820061F67F2AE005F1DCD /* MineViewController.h */,
 				C12820071F67F2AE005F1DCD /* MineViewController.m */,
+				C12068271F793F2500454C8C /* PersonMessageEditController.h */,
+				C12068281F793F2500454C8C /* PersonMessageEditController.m */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -456,6 +482,26 @@
 			path = BeesPlayUITests;
 			sourceTree = "<group>";
 		};
+		C120681C1F79342C00454C8C /* Classification */ = {
+			isa = PBXGroup;
+			children = (
+				C12068241F793C7000454C8C /* ClassificationController.h */,
+				C12068251F793C7000454C8C /* ClassificationController.m */,
+			);
+			path = Classification;
+			sourceTree = "<group>";
+		};
+		C120681D1F79342C00454C8C /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				C120681E1F793A3100454C8C /* TaskSearchController.h */,
+				C120681F1F793A3100454C8C /* TaskSearchController.m */,
+				C12068211F793A6000454C8C /* TaskModel.h */,
+				C12068221F793A6000454C8C /* TaskModel.m */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		C12118E21F66D6FB00FD05D7 /* Commob */ = {
 			isa = PBXGroup;
 			children = (
@@ -534,6 +580,11 @@
 		C12118FE1F66D6FB00FD05D7 /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
+				C12068321F79643800454C8C /* 相机.png */,
+				C12068301F795D9900454C8C /* 未选中@3x.png */,
+				C120682E1F795D9200454C8C /* 未选中@2x.png */,
+				C120682A1F795D8B00454C8C /* 选中@2x.png */,
+				C120682B1F795D8B00454C8C /* 选中@3x.png */,
 				C14DED101F73D51600136546 /* Science.png */,
 				C14DED041F73D3DE00136546 /* 阿呆.png */,
 				C14DED051F73D3DE00136546 /* 笔.png */,
@@ -877,7 +928,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C12068311F795D9900454C8C /* 未选中@3x.png in Resources */,
 				C14DED0B1F73D3DE00136546 /* 笔.png in Resources */,
+				C12068331F79643800454C8C /* 相机.png in Resources */,
 				C1149AEE1F6B743A002D05A0 /* 返回按钮-2.png in Resources */,
 				C121195B1F66D6FB00FD05D7 /* 引导页1(1242-2208).png in Resources */,
 				C14DED251F73D51600136546 /* tabbar_icon_zhibo_normal@2x.png in Resources */,
@@ -910,6 +963,7 @@
 				C12119621F66D6FB00FD05D7 /* 引导页2(750-1334).png in Resources */,
 				C121195E1F66D6FB00FD05D7 /* 引导页1(750-1334).png in Resources */,
 				C12119671F66D6FB00FD05D7 /* 反馈.png in Resources */,
+				C120682F1F795D9200454C8C /* 未选中@2x.png in Resources */,
 				C12119641F66D6FB00FD05D7 /* 引导页3(640-1136).png in Resources */,
 				C121197A1F66D6FB00FD05D7 /* 日期.jpg in Resources */,
 				C1149AFC1F6B984C002D05A0 /* backGroup.png in Resources */,
@@ -924,9 +978,11 @@
 				C1149AFE1F6B9E90002D05A0 /* logo.png in Resources */,
 				C12119651F66D6FB00FD05D7 /* 引导页3(640-960).png in Resources */,
 				C1149AF71F6B786D002D05A0 /* QQ图片.png in Resources */,
+				C120682C1F795D8B00454C8C /* 选中@2x.png in Resources */,
 				C14DED0E1F73D3DE00136546 /* 讨论.png in Resources */,
 				C14DED1C1F73D51600136546 /* tabbar_icon_album_highlight@2x.png in Resources */,
 				C11A038D1F6694080022C428 /* Main.storyboard in Resources */,
+				C120682D1F795D8B00454C8C /* 选中@3x.png in Resources */,
 				C1149B031F6BAFA7002D05A0 /* backGroupTwo.png in Resources */,
 				C14DED211F73D51600136546 /* tabbar_icon_mine_normal@2x.png in Resources */,
 			);
@@ -1121,15 +1177,19 @@
 				C121198B1F66D6FB00FD05D7 /* SVProgressHUD.m in Sources */,
 				C12820021F67F289005F1DCD /* HomeImageViewController.m in Sources */,
 				C121197F1F66D6FB00FD05D7 /* BXKJUserInfo.m in Sources */,
+				C12068231F793A6000454C8C /* TaskModel.m in Sources */,
 				C12119821F66D6FB00FD05D7 /* UIColor+AddColor.m in Sources */,
+				C12068261F793C7000454C8C /* ClassificationController.m in Sources */,
 				C12119831F66D6FB00FD05D7 /* UIView+Extension.m in Sources */,
 				C12119561F66D6FB00FD05D7 /* HttpManager.m in Sources */,
 				C145F8831F6771F1003E999A /* MainTabBarViewController.m in Sources */,
 				C1281FFF1F67F254005F1DCD /* AlbumViewController.m in Sources */,
+				C12068201F793A3100454C8C /* TaskSearchController.m in Sources */,
 				C12119891F66D6FB00FD05D7 /* SVIndefiniteAnimatedView.m in Sources */,
 				C121197E1F66D6FB00FD05D7 /* AppUtils.m in Sources */,
 				C1A001DE1F68418C006364E6 /* RegisterViewController.m in Sources */,
 				C11A03871F6694080022C428 /* AppDelegate.m in Sources */,
+				C12068291F793F2500454C8C /* PersonMessageEditController.m in Sources */,
 				C12119851F66D6FB00FD05D7 /* Singleton.m in Sources */,
 				C121198D1F66D6FB00FD05D7 /* Toast+UIView.m in Sources */,
 				C12119881F66D6FB00FD05D7 /* KxMenu.m in Sources */,

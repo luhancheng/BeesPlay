@@ -1,18 +1,18 @@
 //
-//  BroadcastViewController.m
+//  ClassificationController.m
 //  BeesPlay
 //
-//  Created by 路与心 on 2017/9/21.
+//  Created by 路与心 on 2017/9/25.
 //  Copyright © 2017年 路与心. All rights reserved.
 //
 
-#import "BroadcastViewController.h"
+#import "ClassificationController.h"
 
-@interface BroadcastViewController ()
+@interface ClassificationController ()
 
 @end
 
-@implementation BroadcastViewController
+@implementation ClassificationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,7 +25,7 @@
 }
 
 /*
-#p/Users/luyuxin/BeesPlay/BeesPlay/MicroOffice/BroadCast/BroadcastViewController.mragma mark - Navigation
+#pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

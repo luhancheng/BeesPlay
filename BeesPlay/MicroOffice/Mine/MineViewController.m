@@ -7,13 +7,14 @@
 //
 
 #import "MineViewController.h"
-
+#import "PersonMessageEditController.h"
 @interface MineViewController ()<UITableViewDataSource, UITableViewDelegate,UIAlertViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIActionSheetDelegate>
 @property (nonatomic, strong) UITableView *tableView;
 // 定义数据源
 @property (nonatomic, strong) NSArray *dataSource ;
 @property (nonatomic, strong) UIImageView *headImage;
 @property (nonatomic, strong) UILabel *nickLabel;
+@property (nonatomic, strong) UIImageView *topView;
 @end
 
 @implementation MineViewController
@@ -48,13 +49,14 @@
  */
 //头像视图
 - (void)loadTopView {
-    UIImageView *topView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, WIDTH(150))];
-    topView.image = [UIImage imageNamed:@"Science"];
-    [self.view addSubview:topView];
-    self.headImage = [[UIImageView alloc] initWithFrame:CGRectMake((kScreenWidth-WIDTH(60))/2, (topView.height-WIDTH(60))/2, WIDTH(60), WIDTH(60))];
+    self.view.backgroundColor = [UIColor whiteColor];
+    _topView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, WIDTH(150))];
+    _topView.image = [UIImage imageNamed:@"Science"];
+    [self.view addSubview:_topView];
+    self.headImage = [[UIImageView alloc] initWithFrame:CGRectMake((kScreenWidth-WIDTH(60))/2, _topView.height-(WIDTH(60)/2), WIDTH(60), WIDTH(60))];
     self.headImage.layer.cornerRadius = self.headImage.bounds.size.width/2;
     self.headImage.layer.masksToBounds = YES;
-    [topView addSubview:self.headImage];
+    [self.view addSubview:self.headImage];
     if ([self isBlankString:self.userInfo.avatarImg] == YES) {
         self.headImage.image = [UIImage imageNamed:@"阿呆"];
     }else {
@@ -66,11 +68,12 @@
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
     [self.headImage addGestureRecognizer:tap];
     
-    self.nickLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.headImage.bottom+WIDTH(10), kScreenWidth, WIDTH(15))];
-    self.nickLabel.textAlignment = NSTextAlignmentCenter;
-    [topView addSubview:self.nickLabel];
+    //self.nickLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.headImage.bottom+WIDTH(10), kScreenWidth, WIDTH(15))];
+    self.nickLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.headImage.bottom, kScreenWidth/2+12, WIDTH(12)) text:nil textColor:[UIColor blackColor] font:[UIFont systemFontOfSize:WIDTH(12)]];
+    self.nickLabel.textAlignment = NSTextAlignmentRight;
+    [self.view addSubview:self.nickLabel];
     NSString *nick = [NSString stringWithFormat:@"%@",self.userInfo.nickName];
-    if ([self isBlankString:nick] == YES) {
+    if ([self isBlankString:self.userInfo.nickName] == YES) {
         self.nickLabel.text = @"阿呆";
         self.nickLabel.userInteractionEnabled = YES;
         UITapGestureRecognizer *tapNickName = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapNickName:)];
@@ -82,17 +85,19 @@
         
         self.nickLabel.text = [NSString stringWithFormat:@"%@",nickText];
     }
-    
-    
+    UIImageView *penImage = [[UIImageView alloc] initWithFrame:CGRectMake(self.nickLabel.right, self.nickLabel.top+1, self.nickLabel.height-2, self. nickLabel.height-2)];
+    penImage.image = [UIImage imageNamed:@"笔"];
+    [self.view addSubview:penImage];
 }
 //tabeView 加载
 - (void)initTableView {
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, WIDTH(150), kScreenWidth, kScreenHeight-TOP_BLANNER_HEIGHT-WIDTH(100)-30)];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, WIDTH(200), kScreenWidth, kScreenHeight-WIDTH(200))];
     [self.view addSubview:_tableView];
     _tableView.dataSource = self;
     _tableView.delegate = self;
     _tableView.showsVerticalScrollIndicator = NO;
-    _tableView.backgroundColor = kHexColor(@"efeff4");
+    //_tableView.backgroundColor = kHexColor(@"efeff4");
+    _tableView.backgroundColor = [UIColor whiteColor];
     [self setExtraCellLineHidden:_tableView];
 }
 
@@ -103,10 +108,10 @@
     return 50;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 40;
+    return 0;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return 2;
+    return 1;
 }
 // 点击 cell 实现的方法
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -185,8 +190,12 @@
 }
 
 - (void)handleTap:(UITapGestureRecognizer *)tap {
+    PersonMessageEditController *pmeVC = [[PersonMessageEditController alloc] init];
+    [self goToController:pmeVC withAnimation:YES];
+    /*
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"拍照", @"从手机相册选择", nil];
     [actionSheet showInView:self.view];
+     */
 }
 
 #pragma mark --UIImagePickerControllerDelegate
