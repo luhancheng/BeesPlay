@@ -8,6 +8,9 @@
 
 #import "MineViewController.h"
 #import "PersonMessageEditController.h"
+#import "CollectionViewController.h"
+#import "NoteViewController.h"
+#import "DiscussViewController.h"
 @interface MineViewController ()<UITableViewDataSource, UITableViewDelegate,UIAlertViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIActionSheetDelegate>
 @property (nonatomic, strong) UITableView *tableView;
 // 定义数据源
@@ -115,6 +118,20 @@
 }
 // 点击 cell 实现的方法
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    CollectionViewController *collectionVC = [CollectionViewController new];
+    if (indexPath.row == 0) {
+        [self goToController:collectionVC withAnimation:YES];
+    }else if (indexPath.row == 1) {
+        NoteViewController *noteVC = [NoteViewController new];
+        [self goToController:noteVC withAnimation:YES];
+    }else if (indexPath.row == 2) {
+        DiscussViewController *discussVC = [DiscussViewController new];
+        [self goToController:discussVC withAnimation:YES];
+    }else if (indexPath.row == 3) {
+        CollectionViewController *collectionVC = [CollectionViewController new];
+        collectionVC.judgeType = 6;
+        [self goToController:collectionVC withAnimation:YES];
+    }
     /*
     ShopPartViewController *shopPart = [ShopPartViewController new];
     AccountSetupViewController *accountVC = [[AccountSetupViewController alloc] init];
