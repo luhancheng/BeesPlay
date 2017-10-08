@@ -16,6 +16,7 @@
 		C10976F61F7A58E10025CD8F /* AlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C10976F51F7A58E10025CD8F /* AlbumModel.m */; };
 		C10976F91F7A58F60025CD8F /* AlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C10976F81F7A58F60025CD8F /* AlbumCell.m */; };
 		C10976FC1F7A5AD10025CD8F /* ResourceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C10976FB1F7A5AD10025CD8F /* ResourceCell.m */; };
+		C10C02831F8798930084FA25 /* ResetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C10C02821F8798930084FA25 /* ResetPasswordViewController.m */; };
 		C1149AEE1F6B743A002D05A0 /* 返回按钮-2.png in Resources */ = {isa = PBXBuildFile; fileRef = C1149AEA1F6B743A002D05A0 /* 返回按钮-2.png */; };
 		C1149AF31F6B7864002D05A0 /* 微博图片.png in Resources */ = {isa = PBXBuildFile; fileRef = C1149AF21F6B7864002D05A0 /* 微博图片.png */; };
 		C1149AF61F6B786D002D05A0 /* 微信图片.png in Resources */ = {isa = PBXBuildFile; fileRef = C1149AF41F6B786D002D05A0 /* 微信图片.png */; };
@@ -42,6 +43,10 @@
 		C11A03921F6694080022C428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C11A03901F6694080022C428 /* LaunchScreen.storyboard */; };
 		C11A039D1F6694080022C428 /* BeesPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C11A039C1F6694080022C428 /* BeesPlayTests.m */; };
 		C11A03A81F6694080022C428 /* BeesPlayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C11A03A71F6694080022C428 /* BeesPlayUITests.m */; };
+		C11DB8331F8620950064DFE6 /* CommonProblemVController.m in Sources */ = {isa = PBXBuildFile; fileRef = C11DB8321F8620950064DFE6 /* CommonProblemVController.m */; };
+		C11DB8361F86266F0064DFE6 /* CommonProblemDetailVController.m in Sources */ = {isa = PBXBuildFile; fileRef = C11DB8351F86266F0064DFE6 /* CommonProblemDetailVController.m */; };
+		C11DB8391F8637920064DFE6 /* SystemMessageVController.m in Sources */ = {isa = PBXBuildFile; fileRef = C11DB8381F8637920064DFE6 /* SystemMessageVController.m */; };
+		C11DB83C1F8641110064DFE6 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C11DB83B1F8641110064DFE6 /* EditViewController.m */; };
 		C12068201F793A3100454C8C /* TaskSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = C120681F1F793A3100454C8C /* TaskSearchController.m */; };
 		C12068231F793A6000454C8C /* TaskModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C12068221F793A6000454C8C /* TaskModel.m */; };
 		C12068261F793C7000454C8C /* ClassificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C12068251F793C7000454C8C /* ClassificationController.m */; };
@@ -99,6 +104,10 @@
 		C12119911F66D6FB00FD05D7 /* UIImage+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C121194F1F66D6FB00FD05D7 /* UIImage+Extend.m */; };
 		C12119921F66D6FB00FD05D7 /* UIImage+FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = C12119511F66D6FB00FD05D7 /* UIImage+FixOrientation.m */; };
 		C12119931F66D6FB00FD05D7 /* UIImage+Water.m in Sources */ = {isa = PBXBuildFile; fileRef = C12119531F66D6FB00FD05D7 /* UIImage+Water.m */; };
+		C12635901F7DE8D800EE18A4 /* SetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C126358F1F7DE8D800EE18A4 /* SetupViewController.m */; };
+		C12635931F7E1B5000EE18A4 /* SiteOrSwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C12635921F7E1B5000EE18A4 /* SiteOrSwitchViewController.m */; };
+		C12635961F7E252600EE18A4 /* SiteOrSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C12635951F7E252600EE18A4 /* SiteOrSwitchCell.m */; };
+		C12635991F7E253D00EE18A4 /* SiteOrSwitchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C12635981F7E253D00EE18A4 /* SiteOrSwitchModel.m */; };
 		C1281FFF1F67F254005F1DCD /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1281FFE1F67F254005F1DCD /* AlbumViewController.m */; };
 		C12820021F67F289005F1DCD /* HomeImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C12820011F67F289005F1DCD /* HomeImageViewController.m */; };
 		C12820051F67F29F005F1DCD /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C12820041F67F29F005F1DCD /* NewsViewController.m */; };
@@ -106,6 +115,7 @@
 		C128200B1F67F374005F1DCD /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C128200A1F67F374005F1DCD /* LoginViewController.m */; };
 		C12967501F7D4732001626E0 /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C129674F1F7D4732001626E0 /* NoteViewController.m */; };
 		C12967531F7D4DED001626E0 /* DiscussViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C12967521F7D4DED001626E0 /* DiscussViewController.m */; };
+		C1362C151F7F3CFB00F58DD4 /* MultilingualViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1362C141F7F3CFB00F58DD4 /* MultilingualViewController.m */; };
 		C13B7B981F7C819F00EC2F65 /* 垃圾桶.png in Resources */ = {isa = PBXBuildFile; fileRef = C13B7B971F7C819F00EC2F65 /* 垃圾桶.png */; };
 		C145F8831F6771F1003E999A /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C145F8821F6771F1003E999A /* MainTabBarViewController.m */; };
 		C14DED031F73BDD900136546 /* BroadcastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C14DED021F73BDD900136546 /* BroadcastViewController.m */; };
@@ -169,6 +179,8 @@
 		C10976F81F7A58F60025CD8F /* AlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCell.m; sourceTree = "<group>"; };
 		C10976FA1F7A5AD10025CD8F /* ResourceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceCell.h; sourceTree = "<group>"; };
 		C10976FB1F7A5AD10025CD8F /* ResourceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceCell.m; sourceTree = "<group>"; };
+		C10C02811F8798930084FA25 /* ResetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetPasswordViewController.h; sourceTree = "<group>"; };
+		C10C02821F8798930084FA25 /* ResetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetPasswordViewController.m; sourceTree = "<group>"; };
 		C1149AEA1F6B743A002D05A0 /* 返回按钮-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回按钮-2.png"; sourceTree = "<group>"; };
 		C1149AF21F6B7864002D05A0 /* 微博图片.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "微博图片.png"; sourceTree = "<group>"; };
 		C1149AF41F6B786D002D05A0 /* 微信图片.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "微信图片.png"; sourceTree = "<group>"; };
@@ -205,6 +217,14 @@
 		C11A03A31F6694080022C428 /* BeesPlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeesPlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C11A03A71F6694080022C428 /* BeesPlayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeesPlayUITests.m; sourceTree = "<group>"; };
 		C11A03A91F6694080022C428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C11DB8311F8620950064DFE6 /* CommonProblemVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonProblemVController.h; sourceTree = "<group>"; };
+		C11DB8321F8620950064DFE6 /* CommonProblemVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonProblemVController.m; sourceTree = "<group>"; };
+		C11DB8341F86266F0064DFE6 /* CommonProblemDetailVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonProblemDetailVController.h; sourceTree = "<group>"; };
+		C11DB8351F86266F0064DFE6 /* CommonProblemDetailVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonProblemDetailVController.m; sourceTree = "<group>"; };
+		C11DB8371F8637920064DFE6 /* SystemMessageVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemMessageVController.h; sourceTree = "<group>"; };
+		C11DB8381F8637920064DFE6 /* SystemMessageVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemMessageVController.m; sourceTree = "<group>"; };
+		C11DB83A1F8641110064DFE6 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		C11DB83B1F8641110064DFE6 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		C120681E1F793A3100454C8C /* TaskSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskSearchController.h; sourceTree = "<group>"; };
 		C120681F1F793A3100454C8C /* TaskSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskSearchController.m; sourceTree = "<group>"; };
 		C12068211F793A6000454C8C /* TaskModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskModel.h; sourceTree = "<group>"; };
@@ -295,6 +315,14 @@
 		C12119511F66D6FB00FD05D7 /* UIImage+FixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FixOrientation.m"; sourceTree = "<group>"; };
 		C12119521F66D6FB00FD05D7 /* UIImage+Water.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Water.h"; sourceTree = "<group>"; };
 		C12119531F66D6FB00FD05D7 /* UIImage+Water.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Water.m"; sourceTree = "<group>"; };
+		C126358E1F7DE8D800EE18A4 /* SetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetupViewController.h; sourceTree = "<group>"; };
+		C126358F1F7DE8D800EE18A4 /* SetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetupViewController.m; sourceTree = "<group>"; };
+		C12635911F7E1B5000EE18A4 /* SiteOrSwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteOrSwitchViewController.h; sourceTree = "<group>"; };
+		C12635921F7E1B5000EE18A4 /* SiteOrSwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteOrSwitchViewController.m; sourceTree = "<group>"; };
+		C12635941F7E252600EE18A4 /* SiteOrSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteOrSwitchCell.h; sourceTree = "<group>"; };
+		C12635951F7E252600EE18A4 /* SiteOrSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteOrSwitchCell.m; sourceTree = "<group>"; };
+		C12635971F7E253D00EE18A4 /* SiteOrSwitchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteOrSwitchModel.h; sourceTree = "<group>"; };
+		C12635981F7E253D00EE18A4 /* SiteOrSwitchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteOrSwitchModel.m; sourceTree = "<group>"; };
 		C1281FFD1F67F254005F1DCD /* AlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
 		C1281FFE1F67F254005F1DCD /* AlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumViewController.m; sourceTree = "<group>"; };
 		C12820001F67F289005F1DCD /* HomeImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeImageViewController.h; sourceTree = "<group>"; };
@@ -309,6 +337,8 @@
 		C129674F1F7D4732001626E0 /* NoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteViewController.m; sourceTree = "<group>"; };
 		C12967511F7D4DED001626E0 /* DiscussViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscussViewController.h; sourceTree = "<group>"; };
 		C12967521F7D4DED001626E0 /* DiscussViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscussViewController.m; sourceTree = "<group>"; };
+		C1362C131F7F3CFB00F58DD4 /* MultilingualViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultilingualViewController.h; sourceTree = "<group>"; };
+		C1362C141F7F3CFB00F58DD4 /* MultilingualViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultilingualViewController.m; sourceTree = "<group>"; };
 		C13B7B971F7C819F00EC2F65 /* 垃圾桶.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "垃圾桶.png"; sourceTree = "<group>"; };
 		C145F8811F6771F1003E999A /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
 		C145F8821F6771F1003E999A /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
@@ -398,6 +428,8 @@
 				C10976F81F7A58F60025CD8F /* AlbumCell.m */,
 				C10976FA1F7A5AD10025CD8F /* ResourceCell.h */,
 				C10976FB1F7A5AD10025CD8F /* ResourceCell.m */,
+				C12635941F7E252600EE18A4 /* SiteOrSwitchCell.h */,
+				C12635951F7E252600EE18A4 /* SiteOrSwitchCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -409,6 +441,8 @@
 				C10976F51F7A58E10025CD8F /* AlbumModel.m */,
 				C10976F11F7A58BF0025CD8F /* ResourceModel.h */,
 				C10976F21F7A58BF0025CD8F /* ResourceModel.m */,
+				C12635971F7E253D00EE18A4 /* SiteOrSwitchModel.h */,
+				C12635981F7E253D00EE18A4 /* SiteOrSwitchModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -444,6 +478,8 @@
 				C1149AF91F6B810B002D05A0 /* RegisterSuccessViewController.m */,
 				C1149AFF1F6BA6B1002D05A0 /* PasswordRetrievalViewController.h */,
 				C1149B001F6BA6B1002D05A0 /* PasswordRetrievalViewController.m */,
+				C10C02811F8798930084FA25 /* ResetPasswordViewController.h */,
+				C10C02821F8798930084FA25 /* ResetPasswordViewController.m */,
 			);
 			path = Entry;
 			sourceTree = "<group>";
@@ -465,6 +501,20 @@
 				C129674F1F7D4732001626E0 /* NoteViewController.m */,
 				C12967511F7D4DED001626E0 /* DiscussViewController.h */,
 				C12967521F7D4DED001626E0 /* DiscussViewController.m */,
+				C126358E1F7DE8D800EE18A4 /* SetupViewController.h */,
+				C126358F1F7DE8D800EE18A4 /* SetupViewController.m */,
+				C12635911F7E1B5000EE18A4 /* SiteOrSwitchViewController.h */,
+				C12635921F7E1B5000EE18A4 /* SiteOrSwitchViewController.m */,
+				C1362C131F7F3CFB00F58DD4 /* MultilingualViewController.h */,
+				C1362C141F7F3CFB00F58DD4 /* MultilingualViewController.m */,
+				C11DB8311F8620950064DFE6 /* CommonProblemVController.h */,
+				C11DB8321F8620950064DFE6 /* CommonProblemVController.m */,
+				C11DB8341F86266F0064DFE6 /* CommonProblemDetailVController.h */,
+				C11DB8351F86266F0064DFE6 /* CommonProblemDetailVController.m */,
+				C11DB8371F8637920064DFE6 /* SystemMessageVController.h */,
+				C11DB8381F8637920064DFE6 /* SystemMessageVController.m */,
+				C11DB83A1F8641110064DFE6 /* EditViewController.h */,
+				C11DB83B1F8641110064DFE6 /* EditViewController.m */,
 				C10976E61F7A42B90025CD8F /* Cell */,
 				C10976E71F7A42B90025CD8F /* Model */,
 			);
@@ -1232,13 +1282,17 @@
 				C12119871F66D6FB00FD05D7 /* GuidePageView.m in Sources */,
 				C12119861F66D6FB00FD05D7 /* FailedView.m in Sources */,
 				C12119541F66D6FB00FD05D7 /* BaseNavigationController.m in Sources */,
+				C11DB83C1F8641110064DFE6 /* EditViewController.m in Sources */,
 				C12967501F7D4732001626E0 /* NoteViewController.m in Sources */,
 				C10976F31F7A58BF0025CD8F /* ResourceModel.m in Sources */,
 				C12119931F66D6FB00FD05D7 /* UIImage+Water.m in Sources */,
 				C12119551F66D6FB00FD05D7 /* BaseViewController.m in Sources */,
+				C11DB8391F8637920064DFE6 /* SystemMessageVController.m in Sources */,
 				C10976F91F7A58F60025CD8F /* AlbumCell.m in Sources */,
+				C12635961F7E252600EE18A4 /* SiteOrSwitchCell.m in Sources */,
 				C121198E1F66D6FB00FD05D7 /* UIColor+Extend.m in Sources */,
 				C10976DF1F7A0EBD0025CD8F /* CollectionViewController.m in Sources */,
+				C11DB8361F86266F0064DFE6 /* CommonProblemDetailVController.m in Sources */,
 				C12967531F7D4DED001626E0 /* DiscussViewController.m in Sources */,
 				C1149B011F6BA6B1002D05A0 /* PasswordRetrievalViewController.m in Sources */,
 				C1149AFA1F6B810B002D05A0 /* RegisterSuccessViewController.m in Sources */,
@@ -1253,6 +1307,7 @@
 				C12820021F67F289005F1DCD /* HomeImageViewController.m in Sources */,
 				C121197F1F66D6FB00FD05D7 /* BXKJUserInfo.m in Sources */,
 				C12068231F793A6000454C8C /* TaskModel.m in Sources */,
+				C1362C151F7F3CFB00F58DD4 /* MultilingualViewController.m in Sources */,
 				C12119821F66D6FB00FD05D7 /* UIColor+AddColor.m in Sources */,
 				C10976E21F7A12F30025CD8F /* AlbumCollectionController.m in Sources */,
 				C12068261F793C7000454C8C /* ClassificationController.m in Sources */,
@@ -1262,13 +1317,18 @@
 				C10976E51F7A130C0025CD8F /* ResourcesViewController.m in Sources */,
 				C1281FFF1F67F254005F1DCD /* AlbumViewController.m in Sources */,
 				C12068201F793A3100454C8C /* TaskSearchController.m in Sources */,
+				C12635931F7E1B5000EE18A4 /* SiteOrSwitchViewController.m in Sources */,
+				C11DB8331F8620950064DFE6 /* CommonProblemVController.m in Sources */,
 				C12119891F66D6FB00FD05D7 /* SVIndefiniteAnimatedView.m in Sources */,
 				C121197E1F66D6FB00FD05D7 /* AppUtils.m in Sources */,
 				C1A001DE1F68418C006364E6 /* RegisterViewController.m in Sources */,
 				C11A03871F6694080022C428 /* AppDelegate.m in Sources */,
+				C12635901F7DE8D800EE18A4 /* SetupViewController.m in Sources */,
 				C12068291F793F2500454C8C /* PersonMessageEditController.m in Sources */,
+				C12635991F7E253D00EE18A4 /* SiteOrSwitchModel.m in Sources */,
 				C12119851F66D6FB00FD05D7 /* Singleton.m in Sources */,
 				C121198D1F66D6FB00FD05D7 /* Toast+UIView.m in Sources */,
+				C10C02831F8798930084FA25 /* ResetPasswordViewController.m in Sources */,
 				C12119881F66D6FB00FD05D7 /* KxMenu.m in Sources */,
 				C10976F61F7A58E10025CD8F /* AlbumModel.m in Sources */,
 				C121198F1F66D6FB00FD05D7 /* UIImage+Color.m in Sources */,

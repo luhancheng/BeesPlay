@@ -11,6 +11,7 @@
 #import "CollectionViewController.h"
 #import "NoteViewController.h"
 #import "DiscussViewController.h"
+#import "SetupViewController.h"
 @interface MineViewController ()<UITableViewDataSource, UITableViewDelegate,UIAlertViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIActionSheetDelegate>
 @property (nonatomic, strong) UITableView *tableView;
 // 定义数据源
@@ -131,6 +132,9 @@
         CollectionViewController *collectionVC = [CollectionViewController new];
         collectionVC.judgeType = 6;
         [self goToController:collectionVC withAnimation:YES];
+    }else if (indexPath.row == 4) {
+        SetupViewController *setupVC = [SetupViewController new];
+        [self goToController:setupVC withAnimation:YES];
     }
     /*
     ShopPartViewController *shopPart = [ShopPartViewController new];
