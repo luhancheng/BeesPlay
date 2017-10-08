@@ -16,6 +16,24 @@
 		C10976F61F7A58E10025CD8F /* AlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C10976F51F7A58E10025CD8F /* AlbumModel.m */; };
 		C10976F91F7A58F60025CD8F /* AlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C10976F81F7A58F60025CD8F /* AlbumCell.m */; };
 		C10976FC1F7A5AD10025CD8F /* ResourceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C10976FB1F7A5AD10025CD8F /* ResourceCell.m */; };
+		C109F9EB1F8A741D008BB1EA /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = C109F9DE1F8A741D008BB1EA /* TAAbstractDotView.m */; };
+		C109F9EC1F8A741D008BB1EA /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = C109F9E01F8A741D008BB1EA /* TAAnimatedDotView.m */; };
+		C109F9ED1F8A741D008BB1EA /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = C109F9E21F8A741D008BB1EA /* TADotView.m */; };
+		C109F9EE1F8A741D008BB1EA /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C109F9E41F8A741D008BB1EA /* TAPageControl.m */; };
+		C109F9EF1F8A741D008BB1EA /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C109F9E61F8A741D008BB1EA /* SDCollectionViewCell.m */; };
+		C109F9F01F8A741D008BB1EA /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C109F9E81F8A741D008BB1EA /* SDCycleScrollView.m */; };
+		C109F9F11F8A741D008BB1EA /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C109F9EA1F8A741D008BB1EA /* UIView+SDExtension.m */; };
+		C109F9F41F8A7674008BB1EA /* 抽屉图标@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C109F9F31F8A7674008BB1EA /* 抽屉图标@3x.png */; };
+		C109FA041F8A7C48008BB1EA /* NSBundle+PYSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C109F9F71F8A7C48008BB1EA /* NSBundle+PYSearchExtension.m */; };
+		C109FA051F8A7C48008BB1EA /* PYSearch.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C109F9F81F8A7C48008BB1EA /* PYSearch.bundle */; };
+		C109FA061F8A7C48008BB1EA /* PYSearchConst.m in Sources */ = {isa = PBXBuildFile; fileRef = C109F9FB1F8A7C48008BB1EA /* PYSearchConst.m */; };
+		C109FA071F8A7C48008BB1EA /* PYSearchSuggestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C109F9FD1F8A7C48008BB1EA /* PYSearchSuggestionViewController.m */; };
+		C109FA081F8A7C48008BB1EA /* PYSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C109F9FF1F8A7C48008BB1EA /* PYSearchViewController.m */; };
+		C109FA091F8A7C48008BB1EA /* UIColor+PYSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C109FA011F8A7C48008BB1EA /* UIColor+PYSearchExtension.m */; };
+		C109FA0A1F8A7C48008BB1EA /* UIView+PYSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C109FA031F8A7C48008BB1EA /* UIView+PYSearchExtension.m */; };
+		C109FA0D1F8A847E008BB1EA /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C109FA0B1F8A847E008BB1EA /* search@2x.png */; };
+		C109FA0E1F8A847E008BB1EA /* search@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C109FA0C1F8A847E008BB1EA /* search@3x.png */; };
+		C109FA131F8A8981008BB1EA /* HomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C109FA121F8A8981008BB1EA /* HomeCollectionViewCell.m */; };
 		C10C02831F8798930084FA25 /* ResetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C10C02821F8798930084FA25 /* ResetPasswordViewController.m */; };
 		C1149AEE1F6B743A002D05A0 /* 返回按钮-2.png in Resources */ = {isa = PBXBuildFile; fileRef = C1149AEA1F6B743A002D05A0 /* 返回按钮-2.png */; };
 		C1149AF31F6B7864002D05A0 /* 微博图片.png in Resources */ = {isa = PBXBuildFile; fileRef = C1149AF21F6B7864002D05A0 /* 微博图片.png */; };
@@ -76,12 +94,6 @@
 		C121196E1F66D6FB00FD05D7 /* 设置.png in Resources */ = {isa = PBXBuildFile; fileRef = C12119061F66D6FB00FD05D7 /* 设置.png */; };
 		C12119761F66D6FB00FD05D7 /* QQ@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C12119101F66D6FB00FD05D7 /* QQ@2x.png */; };
 		C12119771F66D6FB00FD05D7 /* 微信@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C12119111F66D6FB00FD05D7 /* 微信@2x.png */; };
-		C12119781F66D6FB00FD05D7 /* 已完成.png in Resources */ = {isa = PBXBuildFile; fileRef = C12119131F66D6FB00FD05D7 /* 已完成.png */; };
-		C12119791F66D6FB00FD05D7 /* 已退货.png in Resources */ = {isa = PBXBuildFile; fileRef = C12119141F66D6FB00FD05D7 /* 已退货.png */; };
-		C121197A1F66D6FB00FD05D7 /* 日期.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C12119151F66D6FB00FD05D7 /* 日期.jpg */; };
-		C121197B1F66D6FB00FD05D7 /* 更多@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C12119161F66D6FB00FD05D7 /* 更多@2x.png */; };
-		C121197C1F66D6FB00FD05D7 /* 空任务@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C12119171F66D6FB00FD05D7 /* 空任务@2x.png */; };
-		C121197D1F66D6FB00FD05D7 /* 进行中.png in Resources */ = {isa = PBXBuildFile; fileRef = C12119181F66D6FB00FD05D7 /* 进行中.png */; };
 		C121197E1F66D6FB00FD05D7 /* AppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C121191B1F66D6FB00FD05D7 /* AppUtils.m */; };
 		C121197F1F66D6FB00FD05D7 /* BXKJUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C121191D1F66D6FB00FD05D7 /* BXKJUserInfo.m */; };
 		C12119801F66D6FB00FD05D7 /* NSDate+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = C12119211F66D6FB00FD05D7 /* NSDate+Common.m */; };
@@ -179,6 +191,39 @@
 		C10976F81F7A58F60025CD8F /* AlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCell.m; sourceTree = "<group>"; };
 		C10976FA1F7A5AD10025CD8F /* ResourceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceCell.h; sourceTree = "<group>"; };
 		C10976FB1F7A5AD10025CD8F /* ResourceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceCell.m; sourceTree = "<group>"; };
+		C109F9DD1F8A741D008BB1EA /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		C109F9DE1F8A741D008BB1EA /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		C109F9DF1F8A741D008BB1EA /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		C109F9E01F8A741D008BB1EA /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		C109F9E11F8A741D008BB1EA /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		C109F9E21F8A741D008BB1EA /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		C109F9E31F8A741D008BB1EA /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
+		C109F9E41F8A741D008BB1EA /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		C109F9E51F8A741D008BB1EA /* SDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewCell.h; sourceTree = "<group>"; };
+		C109F9E61F8A741D008BB1EA /* SDCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollectionViewCell.m; sourceTree = "<group>"; };
+		C109F9E71F8A741D008BB1EA /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
+		C109F9E81F8A741D008BB1EA /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
+		C109F9E91F8A741D008BB1EA /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		C109F9EA1F8A741D008BB1EA /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		C109F9F31F8A7674008BB1EA /* 抽屉图标@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "抽屉图标@3x.png"; sourceTree = "<group>"; };
+		C109F9F61F8A7C48008BB1EA /* NSBundle+PYSearchExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+PYSearchExtension.h"; sourceTree = "<group>"; };
+		C109F9F71F8A7C48008BB1EA /* NSBundle+PYSearchExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+PYSearchExtension.m"; sourceTree = "<group>"; };
+		C109F9F81F8A7C48008BB1EA /* PYSearch.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PYSearch.bundle; sourceTree = "<group>"; };
+		C109F9F91F8A7C48008BB1EA /* PYSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearch.h; sourceTree = "<group>"; };
+		C109F9FA1F8A7C48008BB1EA /* PYSearchConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearchConst.h; sourceTree = "<group>"; };
+		C109F9FB1F8A7C48008BB1EA /* PYSearchConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSearchConst.m; sourceTree = "<group>"; };
+		C109F9FC1F8A7C48008BB1EA /* PYSearchSuggestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearchSuggestionViewController.h; sourceTree = "<group>"; };
+		C109F9FD1F8A7C48008BB1EA /* PYSearchSuggestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSearchSuggestionViewController.m; sourceTree = "<group>"; };
+		C109F9FE1F8A7C48008BB1EA /* PYSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearchViewController.h; sourceTree = "<group>"; };
+		C109F9FF1F8A7C48008BB1EA /* PYSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSearchViewController.m; sourceTree = "<group>"; };
+		C109FA001F8A7C48008BB1EA /* UIColor+PYSearchExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PYSearchExtension.h"; sourceTree = "<group>"; };
+		C109FA011F8A7C48008BB1EA /* UIColor+PYSearchExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PYSearchExtension.m"; sourceTree = "<group>"; };
+		C109FA021F8A7C48008BB1EA /* UIView+PYSearchExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PYSearchExtension.h"; sourceTree = "<group>"; };
+		C109FA031F8A7C48008BB1EA /* UIView+PYSearchExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PYSearchExtension.m"; sourceTree = "<group>"; };
+		C109FA0B1F8A847E008BB1EA /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
+		C109FA0C1F8A847E008BB1EA /* search@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@3x.png"; sourceTree = "<group>"; };
+		C109FA111F8A8981008BB1EA /* HomeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewCell.h; sourceTree = "<group>"; };
+		C109FA121F8A8981008BB1EA /* HomeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewCell.m; sourceTree = "<group>"; };
 		C10C02811F8798930084FA25 /* ResetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetPasswordViewController.h; sourceTree = "<group>"; };
 		C10C02821F8798930084FA25 /* ResetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetPasswordViewController.m; sourceTree = "<group>"; };
 		C1149AEA1F6B743A002D05A0 /* 返回按钮-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回按钮-2.png"; sourceTree = "<group>"; };
@@ -261,12 +306,6 @@
 		C12119061F66D6FB00FD05D7 /* 设置.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置.png"; sourceTree = "<group>"; };
 		C12119101F66D6FB00FD05D7 /* QQ@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QQ@2x.png"; sourceTree = "<group>"; };
 		C12119111F66D6FB00FD05D7 /* 微信@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "微信@2x.png"; sourceTree = "<group>"; };
-		C12119131F66D6FB00FD05D7 /* 已完成.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "已完成.png"; sourceTree = "<group>"; };
-		C12119141F66D6FB00FD05D7 /* 已退货.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "已退货.png"; sourceTree = "<group>"; };
-		C12119151F66D6FB00FD05D7 /* 日期.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "日期.jpg"; sourceTree = "<group>"; };
-		C12119161F66D6FB00FD05D7 /* 更多@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "更多@2x.png"; sourceTree = "<group>"; };
-		C12119171F66D6FB00FD05D7 /* 空任务@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "空任务@2x.png"; sourceTree = "<group>"; };
-		C12119181F66D6FB00FD05D7 /* 进行中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "进行中.png"; sourceTree = "<group>"; };
 		C121191A1F66D6FB00FD05D7 /* AppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUtils.h; sourceTree = "<group>"; };
 		C121191B1F66D6FB00FD05D7 /* AppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUtils.m; sourceTree = "<group>"; };
 		C121191C1F66D6FB00FD05D7 /* BXKJUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXKJUserInfo.h; sourceTree = "<group>"; };
@@ -447,11 +486,89 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		C109F9DB1F8A741D008BB1EA /* SDCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				C109F9DC1F8A741D008BB1EA /* PageControl */,
+				C109F9E51F8A741D008BB1EA /* SDCollectionViewCell.h */,
+				C109F9E61F8A741D008BB1EA /* SDCollectionViewCell.m */,
+				C109F9E71F8A741D008BB1EA /* SDCycleScrollView.h */,
+				C109F9E81F8A741D008BB1EA /* SDCycleScrollView.m */,
+				C109F9E91F8A741D008BB1EA /* UIView+SDExtension.h */,
+				C109F9EA1F8A741D008BB1EA /* UIView+SDExtension.m */,
+			);
+			path = SDCycleScrollView;
+			sourceTree = "<group>";
+		};
+		C109F9DC1F8A741D008BB1EA /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				C109F9DD1F8A741D008BB1EA /* TAAbstractDotView.h */,
+				C109F9DE1F8A741D008BB1EA /* TAAbstractDotView.m */,
+				C109F9DF1F8A741D008BB1EA /* TAAnimatedDotView.h */,
+				C109F9E01F8A741D008BB1EA /* TAAnimatedDotView.m */,
+				C109F9E11F8A741D008BB1EA /* TADotView.h */,
+				C109F9E21F8A741D008BB1EA /* TADotView.m */,
+				C109F9E31F8A741D008BB1EA /* TAPageControl.h */,
+				C109F9E41F8A741D008BB1EA /* TAPageControl.m */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
+		C109F9F21F8A7674008BB1EA /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				C109FA0B1F8A847E008BB1EA /* search@2x.png */,
+				C109FA0C1F8A847E008BB1EA /* search@3x.png */,
+				C109F9F31F8A7674008BB1EA /* 抽屉图标@3x.png */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		C109F9F51F8A7C48008BB1EA /* PYSearch */ = {
+			isa = PBXGroup;
+			children = (
+				C109F9F61F8A7C48008BB1EA /* NSBundle+PYSearchExtension.h */,
+				C109F9F71F8A7C48008BB1EA /* NSBundle+PYSearchExtension.m */,
+				C109F9F81F8A7C48008BB1EA /* PYSearch.bundle */,
+				C109F9F91F8A7C48008BB1EA /* PYSearch.h */,
+				C109F9FA1F8A7C48008BB1EA /* PYSearchConst.h */,
+				C109F9FB1F8A7C48008BB1EA /* PYSearchConst.m */,
+				C109F9FC1F8A7C48008BB1EA /* PYSearchSuggestionViewController.h */,
+				C109F9FD1F8A7C48008BB1EA /* PYSearchSuggestionViewController.m */,
+				C109F9FE1F8A7C48008BB1EA /* PYSearchViewController.h */,
+				C109F9FF1F8A7C48008BB1EA /* PYSearchViewController.m */,
+				C109FA001F8A7C48008BB1EA /* UIColor+PYSearchExtension.h */,
+				C109FA011F8A7C48008BB1EA /* UIColor+PYSearchExtension.m */,
+				C109FA021F8A7C48008BB1EA /* UIView+PYSearchExtension.h */,
+				C109FA031F8A7C48008BB1EA /* UIView+PYSearchExtension.m */,
+			);
+			path = PYSearch;
+			sourceTree = "<group>";
+		};
+		C109FA0F1F8A86FA008BB1EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C109FA101F8A8702008BB1EA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C109FA111F8A8981008BB1EA /* HomeCollectionViewCell.h */,
+				C109FA121F8A8981008BB1EA /* HomeCollectionViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		C119D4061F67E0B30075761D /* HomeImage */ = {
 			isa = PBXGroup;
 			children = (
 				C12820001F67F289005F1DCD /* HomeImageViewController.h */,
 				C12820011F67F289005F1DCD /* HomeImageViewController.m */,
+				C109FA101F8A8702008BB1EA /* Cell */,
+				C109FA0F1F8A86FA008BB1EA /* Model */,
 				C120681C1F79342C00454C8C /* Classification */,
 				C120681D1F79342C00454C8C /* Search */,
 			);
@@ -661,13 +778,13 @@
 		C12118EC1F66D6FB00FD05D7 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				C109F9F21F8A7674008BB1EA /* 首页 */,
 				C1149AEA1F6B743A002D05A0 /* 返回按钮-2.png */,
 				C12118F01F66D6FB00FD05D7 /* logo.png */,
 				C12118F11F66D6FB00FD05D7 /* 引导页 */,
 				C12118FE1F66D6FB00FD05D7 /* 我的 */,
 				C12119081F66D6FB00FD05D7 /* 标签 */,
 				C121190F1F66D6FB00FD05D7 /* 登陆 */,
-				C12119121F66D6FB00FD05D7 /* 财富 */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -747,19 +864,6 @@
 			path = "登陆";
 			sourceTree = "<group>";
 		};
-		C12119121F66D6FB00FD05D7 /* 财富 */ = {
-			isa = PBXGroup;
-			children = (
-				C12119131F66D6FB00FD05D7 /* 已完成.png */,
-				C12119141F66D6FB00FD05D7 /* 已退货.png */,
-				C12119151F66D6FB00FD05D7 /* 日期.jpg */,
-				C12119161F66D6FB00FD05D7 /* 更多@2x.png */,
-				C12119171F66D6FB00FD05D7 /* 空任务@2x.png */,
-				C12119181F66D6FB00FD05D7 /* 进行中.png */,
-			);
-			path = "财富";
-			sourceTree = "<group>";
-		};
 		C12119191F66D6FB00FD05D7 /* PublicClass */ = {
 			isa = PBXGroup;
 			children = (
@@ -808,6 +912,8 @@
 		C12119331F66D6FB00FD05D7 /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				C109F9F51F8A7C48008BB1EA /* PYSearch */,
+				C109F9DB1F8A741D008BB1EA /* SDCycleScrollView */,
 				C12119341F66D6FB00FD05D7 /* SVProgressHUD */,
 				C121193B1F66D6FB00FD05D7 /* ThirdAPI */,
 				C12119421F66D6FB00FD05D7 /* Toast */,
@@ -1045,16 +1151,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C109F9F41F8A7674008BB1EA /* 抽屉图标@3x.png in Resources */,
 				C12068311F795D9900454C8C /* 未选中@3x.png in Resources */,
 				C14DED0B1F73D3DE00136546 /* 笔.png in Resources */,
 				C12068331F79643800454C8C /* 相机.png in Resources */,
 				C1149AEE1F6B743A002D05A0 /* 返回按钮-2.png in Resources */,
 				C121195B1F66D6FB00FD05D7 /* 引导页1(1242-2208).png in Resources */,
 				C14DED251F73D51600136546 /* tabbar_icon_zhibo_normal@2x.png in Resources */,
-				C12119791F66D6FB00FD05D7 /* 已退货.png in Resources */,
 				C1149B051F6BBA20002D05A0 /* 启动页.png in Resources */,
 				C12119661F66D6FB00FD05D7 /* 引导页3(750-1334).png in Resources */,
-				C121197D1F66D6FB00FD05D7 /* 进行中.png in Resources */,
 				C11977B41F7A8CBF00A7628A /* 任务框BG@2x.png in Resources */,
 				C14DED201F73D51600136546 /* tabbar_icon_mine_highlight@2x.png in Resources */,
 				C14DED0A1F73D3DE00136546 /* 阿呆.png in Resources */,
@@ -1065,27 +1170,25 @@
 				C14DED0C1F73D3DE00136546 /* 笔记.png in Resources */,
 				C12119631F66D6FB00FD05D7 /* 引导页3(1242-2208).png in Resources */,
 				C14DED241F73D51600136546 /* tabbar_icon_zhibo_highlight@2x.png in Resources */,
-				C121197B1F66D6FB00FD05D7 /* 更多@2x.png in Resources */,
 				C121196E1F66D6FB00FD05D7 /* 设置.png in Resources */,
 				C14DED221F73D51600136546 /* tabbar_icon_news_highlight@2x.png in Resources */,
 				C1149AF31F6B7864002D05A0 /* 微博图片.png in Resources */,
 				C13B7B981F7C819F00EC2F65 /* 垃圾桶.png in Resources */,
 				C12119601F66D6FB00FD05D7 /* 引导页2(640-1136).png in Resources */,
+				C109FA0D1F8A847E008BB1EA /* search@2x.png in Resources */,
 				C14DED0F1F73D3DE00136546 /* 学习记录.png in Resources */,
 				C121195F1F66D6FB00FD05D7 /* 引导页2(1242-2208).png in Resources */,
 				C14DED1F1F73D51600136546 /* tabbar_icon_home_normal@2x.png in Resources */,
-				C121197C1F66D6FB00FD05D7 /* 空任务@2x.png in Resources */,
 				C11A03921F6694080022C428 /* LaunchScreen.storyboard in Resources */,
 				C14DED1D1F73D51600136546 /* tabbar_icon_album_normal@2x.png in Resources */,
 				C121198A1F66D6FB00FD05D7 /* SVProgressHUD.bundle in Resources */,
-				C12119781F66D6FB00FD05D7 /* 已完成.png in Resources */,
 				C12119621F66D6FB00FD05D7 /* 引导页2(750-1334).png in Resources */,
 				C121195E1F66D6FB00FD05D7 /* 引导页1(750-1334).png in Resources */,
 				C12119671F66D6FB00FD05D7 /* 反馈.png in Resources */,
 				C120682F1F795D9200454C8C /* 未选中@2x.png in Resources */,
 				C12119641F66D6FB00FD05D7 /* 引导页3(640-1136).png in Resources */,
-				C121197A1F66D6FB00FD05D7 /* 日期.jpg in Resources */,
 				C1149AFC1F6B984C002D05A0 /* backGroup.png in Resources */,
+				C109FA051F8A7C48008BB1EA /* PYSearch.bundle in Resources */,
 				C121195D1F66D6FB00FD05D7 /* 引导页1(640-960).png in Resources */,
 				C12119761F66D6FB00FD05D7 /* QQ@2x.png in Resources */,
 				C14DED0D1F73D3DE00136546 /* 收藏.png in Resources */,
@@ -1096,6 +1199,7 @@
 				C12119771F66D6FB00FD05D7 /* 微信@2x.png in Resources */,
 				C1149AFE1F6B9E90002D05A0 /* logo.png in Resources */,
 				C12119651F66D6FB00FD05D7 /* 引导页3(640-960).png in Resources */,
+				C109FA0E1F8A847E008BB1EA /* search@3x.png in Resources */,
 				C1149AF71F6B786D002D05A0 /* QQ图片.png in Resources */,
 				C120682C1F795D8B00454C8C /* 选中@2x.png in Resources */,
 				C14DED0E1F73D3DE00136546 /* 讨论.png in Resources */,
@@ -1279,12 +1383,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C12820081F67F2AE005F1DCD /* MineViewController.m in Sources */,
+				C109F9EB1F8A741D008BB1EA /* TAAbstractDotView.m in Sources */,
 				C12119871F66D6FB00FD05D7 /* GuidePageView.m in Sources */,
 				C12119861F66D6FB00FD05D7 /* FailedView.m in Sources */,
+				C109F9F01F8A741D008BB1EA /* SDCycleScrollView.m in Sources */,
+				C109FA0A1F8A7C48008BB1EA /* UIView+PYSearchExtension.m in Sources */,
 				C12119541F66D6FB00FD05D7 /* BaseNavigationController.m in Sources */,
 				C11DB83C1F8641110064DFE6 /* EditViewController.m in Sources */,
 				C12967501F7D4732001626E0 /* NoteViewController.m in Sources */,
+				C109FA061F8A7C48008BB1EA /* PYSearchConst.m in Sources */,
+				C109F9ED1F8A741D008BB1EA /* TADotView.m in Sources */,
 				C10976F31F7A58BF0025CD8F /* ResourceModel.m in Sources */,
+				C109FA041F8A7C48008BB1EA /* NSBundle+PYSearchExtension.m in Sources */,
 				C12119931F66D6FB00FD05D7 /* UIImage+Water.m in Sources */,
 				C12119551F66D6FB00FD05D7 /* BaseViewController.m in Sources */,
 				C11DB8391F8637920064DFE6 /* SystemMessageVController.m in Sources */,
@@ -1304,12 +1414,17 @@
 				C10976FC1F7A5AD10025CD8F /* ResourceCell.m in Sources */,
 				C11A038A1F6694080022C428 /* ViewController.m in Sources */,
 				C121198B1F66D6FB00FD05D7 /* SVProgressHUD.m in Sources */,
+				C109FA081F8A7C48008BB1EA /* PYSearchViewController.m in Sources */,
 				C12820021F67F289005F1DCD /* HomeImageViewController.m in Sources */,
 				C121197F1F66D6FB00FD05D7 /* BXKJUserInfo.m in Sources */,
 				C12068231F793A6000454C8C /* TaskModel.m in Sources */,
 				C1362C151F7F3CFB00F58DD4 /* MultilingualViewController.m in Sources */,
 				C12119821F66D6FB00FD05D7 /* UIColor+AddColor.m in Sources */,
 				C10976E21F7A12F30025CD8F /* AlbumCollectionController.m in Sources */,
+				C109F9EC1F8A741D008BB1EA /* TAAnimatedDotView.m in Sources */,
+				C109F9EE1F8A741D008BB1EA /* TAPageControl.m in Sources */,
+				C109FA091F8A7C48008BB1EA /* UIColor+PYSearchExtension.m in Sources */,
+				C109F9F11F8A741D008BB1EA /* UIView+SDExtension.m in Sources */,
 				C12068261F793C7000454C8C /* ClassificationController.m in Sources */,
 				C12119831F66D6FB00FD05D7 /* UIView+Extension.m in Sources */,
 				C12119561F66D6FB00FD05D7 /* HttpManager.m in Sources */,
@@ -1317,10 +1432,12 @@
 				C10976E51F7A130C0025CD8F /* ResourcesViewController.m in Sources */,
 				C1281FFF1F67F254005F1DCD /* AlbumViewController.m in Sources */,
 				C12068201F793A3100454C8C /* TaskSearchController.m in Sources */,
+				C109FA071F8A7C48008BB1EA /* PYSearchSuggestionViewController.m in Sources */,
 				C12635931F7E1B5000EE18A4 /* SiteOrSwitchViewController.m in Sources */,
 				C11DB8331F8620950064DFE6 /* CommonProblemVController.m in Sources */,
 				C12119891F66D6FB00FD05D7 /* SVIndefiniteAnimatedView.m in Sources */,
 				C121197E1F66D6FB00FD05D7 /* AppUtils.m in Sources */,
+				C109F9EF1F8A741D008BB1EA /* SDCollectionViewCell.m in Sources */,
 				C1A001DE1F68418C006364E6 /* RegisterViewController.m in Sources */,
 				C11A03871F6694080022C428 /* AppDelegate.m in Sources */,
 				C12635901F7DE8D800EE18A4 /* SetupViewController.m in Sources */,
@@ -1335,6 +1452,7 @@
 				C11A03841F6694080022C428 /* main.m in Sources */,
 				C12119811F66D6FB00FD05D7 /* NSDictionary+NSDictionary_Security.m in Sources */,
 				C12820051F67F29F005F1DCD /* NewsViewController.m in Sources */,
+				C109FA131F8A8981008BB1EA /* HomeCollectionViewCell.m in Sources */,
 				C12119921F66D6FB00FD05D7 /* UIImage+FixOrientation.m in Sources */,
 				C12119911F66D6FB00FD05D7 /* UIImage+Extend.m in Sources */,
 			);
